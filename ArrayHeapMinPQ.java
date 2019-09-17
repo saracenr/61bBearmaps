@@ -7,7 +7,7 @@ public class ArrayHeapMinPQ implements ExtrinsicMinPQ<T> {
 	private ArrayList<PriorityNode> items;
 	private int size;
 
-	public NaiveMinPQ() {
+	public ArrayHeapMinPQ() {
         items = new ArrayList<>();
         size = 0;
     }
@@ -42,7 +42,7 @@ public class ArrayHeapMinPQ implements ExtrinsicMinPQ<T> {
 	}
 
 	public int size() {
-
+		return size;
 	}
 
 	public void changePriority(T item, double priority) {
@@ -65,7 +65,6 @@ public class ArrayHeapMinPQ implements ExtrinsicMinPQ<T> {
 		else {
 			return;
 		}
-
 	}
 
 	private void percolateDown(int index) {
