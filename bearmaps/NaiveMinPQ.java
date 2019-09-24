@@ -11,7 +11,7 @@ import java.util.NoSuchElementException;
  *  but doing so makes the add method painfully slow to the
  *  point where this class is very difficult to use for testing.
  *  @author Matt Owen @since 03-11-19 */
-public class NaiveMinPQ<T> implements ExtrinsicMinPQ<T> {
+public class NaiveMinPQ<T> implements bearmaps.ExtrinsicMinPQ<T> {
 
     private ArrayList<PriorityNode> items;
 
